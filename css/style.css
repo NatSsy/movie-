@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Mouse+Memoirs&family=Poppins:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #212424 0%, #63646a 100%);
+    min-height: 100vh;
+    
+}
+
+.descripcion{
+    font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.titulo{
+    font-weight: 600;
+	font-size: 50px;
+	margin-top: 10px;
+}
+
+.boton{
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 5px;
+	padding: 15px 30px;
+	color: #fff;
+	margin-right: 20px;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 18px;
+    text-decoration: none;
+}
+
+.boton:hover{
+    background: #fff;
+	color: #000;
+}
+
+.boton i {
+	margin-right: 1.25em;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+/* =============== NAV BAR START =============== */
+
+
+.nav-logo{
+    width: 50px;
+    height: 56px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.custom-nav{
+    background-color: rgb(0, 0, 0)
+}
+
+.navbar-collapse{
+    flex-grow: initial;
+}
+
+.navbar {
+    position: fixed;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+
+
+.nav-logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-link{
+    color: rgb(255, 255, 255);
+    margin: 6px;
+    border:none
+}
+
+.nav-link:hover{
+    transition: 0.60s;
+    transform: scale(1.1);
+}
+
+
+/* =============== NAV BAR END=============== */
+
+/* ================= CARROUSEL START ================= */
+
+.carousel-movie .movie{
+    height: 600px;
+    object-fit:cover;
+    
+}
+
+.text {
+    position: sticky;
+}
+
+.text-carousel {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* ================= CARROUSEL END ================= */
+
+/* =============== FOOTER START =============== */
+footer{
+    bottom: 0;
+}
+.linkCustom {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    
+}
+
+.linkCustom:hover {
+    color: #1CB5E0;
+}
+
+
+/* =============== FOOTER END =============== */
+
+/* =================CONTENEDOR DE TITULOS Y CONTROLES============== */
+
+.contenedor-titulo-controles{
+	display: flex;
+	justify-content: space-between;
+	align-items:end;
+}
+
+.contenedor-titulo-controles h3 {
+	margin-top: 30px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo{
+	background: #E50914;
+}
+
+
+
+/*==============CONTENEDOR PRINCIPAL=============  */
+.de-tu-interes{
+	margin-bottom: 70px;
+}
+
+.contenedor-principal{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.flecha-izquierda,
+.flecha-derecha{
+	border: none;
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500px;
+	transition: .2s ease all;
+}
+
+.flecha-izquierda:hover,
+.flecha-derecha:hover{
+	background: rgba(0, 0, 0, .9);
+}
+
+.flecha-izquierda{
+	left: 0;
+}
+
+.contenedor-principal .flecha-derecha{
+	right: 0;
+}
+
+/*=================== COROUSEL PELICULAS =============== */
+
+.contenedor-carousel {
+    width: 100%;
+    padding: 20px 0 ;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel {
+    display: flex;
+    overflow:visible;
+    flex-wrap: nowrap;
+}
+
+.peliculas {
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.peliculas:hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.peliculas img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.contenedor-carousel {
+		overflow: visible;
+	}
+
+	.carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.indicadores,
+	.flecha-izquierda,
+	.flecha-derecha{
+		display: none;
+	}
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+}
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+
+.flecha-left,
+.flecha-right{
+	border: none;
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500px;
+	transition: .2s ease all;
+}
+
+.flecha-left:hover,
+.flecha-right:hover{
+	background: rgba(0, 0, 0, .9);
+}
+
+.flecha-left{
+	left: 0;
+}
+
+.flecha-right{
+	right: 0;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/Images/Logo/logo.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/login_y_registro.css">
+
+</head>
+
+<body class="d-flex flex-column">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/assets/Images/Logo/logo.png" class="nav-logo cusmtomNavBar" alt="logo-nav"></a>
+                <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon btn btn-info"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="/index.html" role="button">Inicio</a>
+                        <a class="nav-link" href="/pages/about us.html" role="button">Sobre Nosotros</a>
+                        <a class="nav-link" href="/pages/login.html" role="button">Ingresar</a>
+                        <a class="nav-link" href="/pages/registro.html" role="button">Registrar</a>
+                        <a class="nav-link" href="/pages/contact.html" role="button">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <div class="login-registro">
+        <div class="registro">
+            <form class="formulario">
+                <h1 class="titulo">¿ Ya tienes una cuenta en Movie+ ?</h1>
+                <div class="contenedor">
+                    <div class="contenedor-inputs">
+                        <div class="input-email">
+                            <input type="email" placeholder="Email o Usuario" id="email" required>
+                        </div>
+                        <div class="input-password">
+                            <input type="password" placeholder="Contraseña" id="password" required>
+                        </div>
+                    </div>
+                    <label class="check">
+                        <input type="checkbox" checked="checked" name="remember"> Recordar cuenta
+                    </label>
+                    <div class="boton">
+                        <input type="submit" value="Iniciar sesíon" class="boton-sesion-registro">
+                    </div>
+                    <p class="cuenta">¿Todavía no tienes una cuenta? <a href="/pages/registro.html"
+                            class="link">Regístrate</a></p>
+                </div>
+        </div>
+        </form>
+    </div>
+</main>
+
+<!--     =============== FOOTER START =============== -->
+
+
+<footer class="container-fluid text-light d-flex align-items-center justify-content-center"
+style="background-color: rgba(0, 0, 0, 0.45);">
+<div class="row">
+    <div class="col-12 col-lg-4 col-md-4 d-flex justify-content-center imgFooterCustom">
+        <img src="/Assets/Images/Logo/logo.png" alt="">
+    </div>
+    <div class="col-12 col-lg-4 col-md-8 d-flex align-items-center justify-content-center iconsCustom">
+        <div class="ps-4">
+            <i class="bi bi-spotify fs-2 mx-2"></i>
+        </div>
+        <a class="linkCustom" href="https://twitter.com" target="_blank">Twitter</a>
+        <div class="ps-4">
+            <i class="bi bi-youtube fs-2 mx-2"></i>
+        </div>
+        <a class="linkCustom" href="https://www.youtube.com" target="_blank">YouTube</a>
+        <div class="ps-4">
+            <i class="bi bi-instagram fs-2 mx-2"></i>
+        </div>
+        <a class="linkCustom" href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+    <div class="col-12 col-lg-4 col-md-12 fs-6  d-flex align-items-center justify-content-center ">
+        Somos Movie+ servicio de striming formado por programadores y amantes del cine, queriendo formar parte de cada momento de alegria, triteza, accion y emocion que te brindan tus peliculas favoritas.
+    </div>
+    <hr class="border border-white border-1 opacity-100">
+    <p class="fs-6 px-3  text-center">
+        Movie+. &copy; Todos los Derechos Reservados.
+    </p>
+</div>
+
+</footer>
+
+
+<!--     =============== FOOTER END =============== -->
+    <script src="/javascript/login.js"></script>
+</body>
+
+</html>
